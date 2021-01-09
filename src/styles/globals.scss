@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+$text-color: #124a63;
+$text-secondary: #b3c5cd;
+$primary-color:#21b6b7;
+
+$background-color:#f9f9f9;
+$background-color-light:white;
+$background-color-dark:#eef3f6;
+
+$font-family-new: "Poppins", sans-serif;
+$box-shadow: 0px 2px 8px rbga(0, 0, 0, 0.05);
+
+
+:root {
+  --text-color: #{$text-color};
+  --text-secondary: #{$text-secondary};
+  --primary-color: #{$primary-color};
+
+  --background-color: #{$background-color};
+  --background-color-light: #{$background-color-light};
+  --background-color-dark: #{$background-color-dark};
+  
+  --font-family: #{$font-family-new};
+  --box-shadow: #{$box-shadow};
+}
+
+[data-theme="dark"]{
+  --text-color: #f0f0f0;
+  --text-secondary: #b3c5cd;
+  --primary-color: #{$primary-color};
+
+  --background-color: #252329;
+  --background-color-light: #3c393f;
+  --background-color-dark: #120f13;
+  
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: var(--font-family);
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  color: inherit;
+  font: inherit;
+}
