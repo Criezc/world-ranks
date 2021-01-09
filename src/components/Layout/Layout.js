@@ -2,7 +2,7 @@ import Head from "next/head";
 import styles from "./Layout.module.scss";
 import WorldRankIcon from "./Logo.jsx";
 import Link from "next/link";
-import { Brightness1, Brightness6Rounded } from "@material-ui/icons";
+import { Brightness6Rounded } from "@material-ui/icons";
 import { useEffect, useState } from "react";
 
 const Layout = ({ children, title = "World Ranks" }) => {
@@ -39,7 +39,9 @@ const Layout = ({ children, title = "World Ranks" }) => {
       </Head>
       <header className={styles.header}>
         <Link href="/">
-          <WorldRankIcon />
+          <a>
+            <WorldRankIcon />
+          </a>
         </Link>
         <button className={styles.themeSwitcher} onClick={switchTheme}>
           <Brightness6Rounded />
